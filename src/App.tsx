@@ -103,7 +103,7 @@ function App() {
                       {...form.getInputProps("message")}
                       size="lg"
                       radius="md"
-                      placeholder="Input placeholder"
+                      placeholder="Give me research papers or Articles related to ..."
                       style={{
                         width: "700px",
                       }}
