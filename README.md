@@ -14,7 +14,7 @@ thousands of articles, papers, and patents in the computing and engineering fiel
 ## MongoDB Atlas Vector Search & OpenAi Embedding
 
 We use MongoDB Atlas Vector Search to store and index the training data, and OpenAI's GPT-3 to generate the answers to the questions that the model is asked. By combining these two powerful tools, we are able to create a model that is capable of providing accurate and relevant information to researchers in the computing and engineering fields.
-
+![mongo_embeddings](https://github.com/mrlectus/FEMongoRAG-Bounty/assets/25666658/9790fc91-51e7-43fa-9132-6aa1bd13a0ac)
 
 ## Stack
 
