@@ -1,30 +1,31 @@
-# React + TypeScript + Vite
+#  Building a Customized RAG Model
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## AI Research Assistance For Computing And Engineering Field
 
-Currently, two official plugins are available:
+For professionals, scholars, and students in the computing and engineering disciplines, an AI research support tool  designed to optimize and improve several parts of the research process. By compiling and summarizing pertinent papers, articles, patents, and other scholarly sources according to their search queries, this tool assists scholars in conducting literature reviews in an effective manner.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Training
 
-## Expanding the ESLint configuration
+In order for this model to be effective in assisting researchers, it must be trained on a large dataset of scholarly articles, papers, and patents. This training data will be used to teach the model how to identify and summarize relevant information, as well as how to answer questions based on the information it has been given.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+We use data from [Science Direct](https://www.sciencedirect.com/browse/journals-and-books?subject=computer-science) to train the model which contains over
+thousands of articles, papers, and patents in the computing and engineering fields.
 
-- Configure the top-level `parserOptions` property like this:
+## MongoDB Atlas Vector Search & OpenAi Embedding
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+We use MongoDB Atlas Vector Search to store and index the training data, and OpenAI's GPT-3 to generate the answers to the questions that the model is asked. By combining these two powerful tools, we are able to create a model that is capable of providing accurate and relevant information to researchers in the computing and engineering fields.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## Stack
+
+* Frontend: [FEMongoRAG-Bounty](https://fe-mongo-rag-bounty.vercel.app)
+    - React
+    - Mantine
+
+* Backend: [BEMongoRAG-Bounty](https://github.com/mrlectus/BEMongoRAG-Bounty)
+    - Nodejs
+    - MongoDB Atlas Vector search
+    - Fastify
+
+## Usage
+Go here [FEMongoRAG-Bounty](https://fe-mongo-rag-bounty.vercel.app) and just input your prompt.
