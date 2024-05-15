@@ -27,7 +27,7 @@ function App() {
   });
 
   const chat = useChat();
-  console.log(chat?.data);
+
   return (
     <>
       <main>
